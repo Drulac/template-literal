@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title>My First Article</title>
+</head>
+<body>
+	<h1>{{ heading.length > 16 ? heading.slice(0,16) + '...' : heading }}</h1>
+	@if(alert)
+	<h3>{{ alert }}</h3>
+	@endif
+</body>
+</html>

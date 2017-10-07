@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title>My First Article</title>
+</head>
+<body>
+	<h1>${d.heading.length > 16 ? d.heading.slice(0,16) + '...' : d.heading}</h1>
+	${d.alert ? '<h3>'+d.alert+'</h3>' : ''}
+	<pre>${d.content}</pre>
+</body>
+</html>

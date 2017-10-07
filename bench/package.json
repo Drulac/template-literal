@@ -1,0 +1,26 @@
+{
+  "name": "bench",
+  "version": "0.0.1",
+  "main": "benchmark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Drulac <drulac@protonmail.com> (https://github.com/Drulac/)",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drulac/literal-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Drulac/literal-template/issues"
+  },
+  "homepage": "https://github.com/Drulac/literal-template#readme",
+  "description": "",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "dot": "^1.1.2",
+    "edge.js": "^1.1.0",
+    "ejs": "^2.5.7",
+    "zup": "0.0.1"
+  }
+}
