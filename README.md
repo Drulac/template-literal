@@ -9,7 +9,7 @@ npm install template-literal
 
 ## usage
 
-usage is simple, the syntaxe is [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+Usage is simple, the syntaxe is [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 Expressions are enclosed by `${` and `}`. The value returned by the expression contained inside brackets is insered in the page code. `d` is the name of the object used to access data variable.
 
@@ -57,7 +57,7 @@ console.log(runTemplate({
 
 this benchmark (and this documentation) is mostly inspired by [Zup's official benchmark](https://github.com/mscdex/zup/wiki/Benchmarks)
 
- * module versions:
+ * module's versions:
    * benchmark : v2.1.4
    * template-literal : v0.0.1
    * dot : v1.1.2
@@ -66,7 +66,7 @@ this benchmark (and this documentation) is mostly inspired by [Zup's official be
    * zup : v0.0.1
  * node v7.10.1
 
-template-literal doesn't have options, unlike the others
+template-literal doesn't have options, unlike the others template engine. It's a parts of the high speed reason.
 
 ## template code
 
@@ -82,7 +82,7 @@ template-literal doesn't have options, unlike the others
 </body>
 </html>
 ```
-template for other engines can be found in the bench directory
+template for other engines can be found in the [bench directory](bench/)
 
 
 
