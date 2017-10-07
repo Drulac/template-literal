@@ -1,5 +1,5 @@
 {
-  "name": "literal-template",
+  "name": "template-literal",
   "version": "0.0.1",
   "description": "fastest, smallest and simplest template engine, using JS's literal template feature",
   "main": "compile.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Drulac/literal-template.git"
+    "url": "git+https://github.com/Drulac/template-literal.git"
   },
   "keywords": [
     "template"
@@ -19,7 +19,7 @@
   "author": "Drulac <drulac@protonmail.com> (https://github.com/Drulac/)",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/Drulac/literal-template/issues"
+    "url": "https://github.com/Drulac/template-literal/issues"
   },
-  "homepage": "https://github.com/Drulac/literal-template#readme"
+  "homepage": "https://github.com/Drulac/template-literal#readme"
 }

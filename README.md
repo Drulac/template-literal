@@ -1,10 +1,10 @@
-# literal-template
+# template-literal
 fastest, smallest and simplest template engine, using JS's literal template feature
 
 ## install
 
 ```
-npm install literal-template
+npm install template-literal
 ```
 
 ## usage
@@ -13,7 +13,7 @@ usage is simple, the syntaxe is [template literals](https://developer.mozilla.or
 
 Expressions are enclosed by `${` and `}`. The value returned by the expression contained inside brackets is insered in the page code. `d` is the name of the object used to access data variable.
 
-`require('literal-template')` returns the template compiler function.
+`require('template-literal')` returns the template compiler function.
 
 ## sample
 
@@ -59,14 +59,14 @@ this benchmark (and this documentation) is mostly inspired by [Zup's official be
 
  * module versions:
    * benchmark : v2.1.4
-   * literal-template : v0.0.1
+   * template-literal : v0.0.1
    * dot : v1.1.2
    * edge.js : v1.1.0
    * ejs : v2.5.7
    * zup : v0.0.1
  * node v7.10.1
 
-literal-template doesn't have options, unlike the others
+template-literal doesn't have options, unlike the others
 
 ## template code
 
