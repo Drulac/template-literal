@@ -1,7 +1,23 @@
 # literal-template
 fastest, smallest and simplest template engine, using JS's literal template feature
 
+##install
+```npm install literal-template```
+
+##usage
+usage is simple, the syntaxe is [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+Expressions are enclosed by `${` and `}`. The value returned by the expression contained inside brackets is insered in the page code. You must access to your vars with `d`
+
+require('literal-template') returns the template compiler function.
+
+##sample
+[example template](example/template.html)
+[example use](example/index.html)
+
 ## benchmark
+
+this benchmark is mostly inspired by [Zup's official benchmark](https://github.com/mscdex/zup/wiki/Benchmarks)
 
  * module versions:
    * benchmark : v2.1.4
@@ -11,6 +27,8 @@ fastest, smallest and simplest template engine, using JS's literal template feat
    * ejs : v2.5.7
    * zup : v0.0.1
  * node v7.10.1
+
+literal-template doesn't have options, unlike the others
 
 ## template code
 
