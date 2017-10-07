@@ -1,23 +1,61 @@
 # literal-template
 fastest, smallest and simplest template engine, using JS's literal template feature
 
-##install
-```npm install literal-template```
+## install
 
-##usage
+```
+npm install literal-template
+```
+
+## usage
+
 usage is simple, the syntaxe is [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
-Expressions are enclosed by `${` and `}`. The value returned by the expression contained inside brackets is insered in the page code. You must access to your vars with `d`
+Expressions are enclosed by `${` and `}`. The value returned by the expression contained inside brackets is insered in the page code. `d` is the name of the object used to access data variable.
 
-require('literal-template') returns the template compiler function.
+`require('literal-template')` returns the template compiler function.
 
-##sample
+## sample
+
 [example template](example/template.html)
-[example use](example/index.html)
+```html
+<!doctype html>
+<html>
+<head>
+	<title>index template</title>
+</head>
+<body>
+	<meal>
+		${d.eat.reduce((str,food)=>str+'<eat>'+food+'</eat>', '')}
+	</meal>
+
+	<sport>
+		${d.doSport ? 'you are in a good way' : 'change it now'}
+	</sport>
+
+	<dessert>
+	</dessert>
+</body>
+</html>
+```
+[example use](example/index.js)
+```js
+const fs = require('fs');
+let code = fs.readFileSync('./template.html', 'utf8');
+
+const compile = require('../compile.js');
+
+let runTemplate = compile(code);
+
+console.log(runTemplate({
+	eat: ['apple', 'orange', 'carot'],
+	sport: true
+}));
+```
 
 ## benchmark
 
-this benchmark is mostly inspired by [Zup's official benchmark](https://github.com/mscdex/zup/wiki/Benchmarks)
+this benchmark (and this documentation) is mostly inspired by [Zup's official benchmark](https://github.com/mscdex/zup/wiki/Benchmarks)
 
  * module versions:
    * benchmark : v2.1.4
@@ -30,7 +68,7 @@ this benchmark is mostly inspired by [Zup's official benchmark](https://github.c
 
 literal-template doesn't have options, unlike the others
 
-## template code
+## template code
 
 ```html
 <html>
