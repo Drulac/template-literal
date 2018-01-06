@@ -1,6 +1,6 @@
 {
   "name": "template-literal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "fastest, smallest and simplest template engine, using JS's literal template feature",
   "main": "compile.js",
   "directories": {
