@@ -30,7 +30,7 @@ Expressions are enclosed by `${` and `}`. The value returned by the expression c
 	</meal>
 
 	<sport>
-		${d.doSport ? 'you are in a good way' : 'change it now'}
+		${d.sport ? 'you are in a good way' : 'change it now'}
 	</sport>
 
 	<dessert>
