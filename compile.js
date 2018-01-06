@@ -1,3 +1,1 @@
-module.exports = function(templateStr){
-	return new Function('d', 'return `'+templateStr+'`');
-};
+module.exports = templateStr => new Function('d', 'return `' + templateStr + '`')
