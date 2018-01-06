@@ -1,13 +1,13 @@
 # template-literal
 fastest, smallest and simplest template engine, using JS's literal template feature
 
-## install
+## Install
 
 ```
 npm install template-literal
 ```
 
-## usage
+## Usage
 
 Usage is simple, the syntaxe is [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
@@ -15,7 +15,7 @@ Expressions are enclosed by `${` and `}`. The value returned by the expression c
 
 `require('template-literal')` returns the template compiler function.
 
-## sample
+## Code sample
 
 [example template](example/template.html)
 ```html
@@ -53,7 +53,7 @@ console.log(runTemplate({
 }));
 ```
 
-## benchmark
+## Benchmark
 
 this benchmark (and this documentation) is mostly inspired by [Zup's official benchmark](https://github.com/mscdex/zup/wiki/Benchmarks)
 
@@ -68,7 +68,7 @@ this benchmark (and this documentation) is mostly inspired by [Zup's official be
 
 template-literal doesn't have options, unlike the others template engine. It's a parts of the high speed reason.
 
-## template code
+### Template code
 
 ```html
 <html>
@@ -85,10 +85,10 @@ template-literal doesn't have options, unlike the others template engine. It's a
 template for other engines can be found in the [bench directory](bench/)
 
 
+### Results
+#### Simplifed
 
-### simplifed results
-
-#### using `console.time` (lower is better)
+##### Using `console.time` (lower is better)
 
 |               |  Compilation  |     Render    |
 | ------------- |          ---: |          ---: |
@@ -99,7 +99,7 @@ template for other engines can be found in the [bench directory](bench/)
 |      edge     |  25'413.106ms | 28'073.437ms  |
 
 
-#### using the `benchmark` nodejs lib (higher is better)
+##### Using the `benchmark` nodejs lib (higher is better)
 |               |    Compilation   |       Render        |
 | ------------- |             ---: |                ---: |
 |    literal    |  163'222 ops/sec |  3'156'867 ops/sec  |
@@ -110,7 +110,7 @@ template for other engines can be found in the [bench directory](bench/)
 
 
 
-### original results
+##### Original results
 ```
 --------- console.time Compile ---------
 literal compile: 622.954ms
@@ -141,9 +141,15 @@ Fastest is Literal render
 
 ```
 
-
+### Run by yourself
 you can run the benchmark on your own computer easily :
 go to the bench directory, run :
 - `npm i`
 - `node benchmark.js`
 and wait :grin:
+
+# Donate
+You can make me a donation to support my work :
+- With Liberapay : [https://liberapay.com/drulac/](https://liberapay.com/drulac/)
+- With Paypal : drulac@protonmail.com
+
