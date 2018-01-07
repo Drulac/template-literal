@@ -19,7 +19,7 @@
   "dependencies": {
     "benchmark": "^2.1.4",
     "dot": "^1.1.2",
-    "edge.js": "^1.1.0",
+    "edge.js": "^1.1.3",
     "ejs": "^2.5.7",
     "zup": "0.0.1"
   }

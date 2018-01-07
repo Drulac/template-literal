@@ -3,6 +3,8 @@ fastest, smallest and simplest template engine, using JS's literal template feat
 
 ## Install
 
+If you use Express, you can find here a simple wrapper to use it as Express templating engine : https://github.com/Drulac/express-tl/
+
 ```
 npm install template-literal
 ```
@@ -88,14 +90,14 @@ template for other engines can be found in the [bench directory](bench/)
 ### Results
 #### Simplifed
 
-##### Using `console.time` (lower is better)
+##### Using `console.time` with 1e5 runs (lower is better)
 
 |               |  Compilation  |     Render    |
 | ------------- |          ---: |          ---: |
 |    literal    |     622.954ms |     33.071ms  |
 |      zup      |   2'555.846ms |    184.788ms  |
-|      ejs      |  15'055.106ms |  1'660.634ms  |
 |      doT      |   6'624.527ms |    620.174ms  |
+|      ejs      |  15'055.106ms |  1'660.634ms  |
 |      edge     |  25'413.106ms | 28'073.437ms  |
 
 
@@ -104,8 +106,8 @@ template for other engines can be found in the [bench directory](bench/)
 | ------------- |             ---: |                ---: |
 |    literal    |  163'222 ops/sec |  3'156'867 ops/sec  |
 |      zup      |   38'914 ops/sec |    562'130 ops/sec  |
-|      ejs      |    6'216 ops/sec |     57'079 ops/sec  |
 |      doT      |   14'515 ops/sec |    157'347 ops/sec  |
+|      ejs      |    6'216 ops/sec |     57'079 ops/sec  |
 |      edge     |    4'285 ops/sec |      3'476 ops/sec  |
 
 
