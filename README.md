@@ -11,7 +11,7 @@ npm install template-literal
 
 ## Usage
 
-Usage is simple, the syntaxe is [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+Usage is simple, the syntax is [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 Expressions are enclosed by `${` and `}`. The value returned by the expression contained inside brackets is insered in the page code. `d` is the name of the object used to access data variable.
 
